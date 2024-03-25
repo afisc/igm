@@ -19,6 +19,6 @@
                       ],
   "time_start": 1900.0,
   "time_end": 2000.0,
-  "plt2d_live": true,
+  "plt2d_live": false,
   "time_save": 10.0
 }
