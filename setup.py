@@ -32,7 +32,8 @@ setup(
     long_description_content_type="text/markdown",
     python_requires="<3.11",
     install_requires=[
-        "tensorflow[and-cuda]==2.14.0",
+        "tensorflow-macos==2.14.0",
+        "tensorflow-metal",
         "matplotlib",
         "scipy",
         "netCDF4",
