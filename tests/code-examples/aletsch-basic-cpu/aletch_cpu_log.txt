@@ -1,0 +1,66 @@
+/Users/afisc/igm_venv/lib/python3.10/site-packages/tensorflow/python/framework/tensor_util.py:518: RuntimeWarning: overflow encountered in cast
+  nparray = np.array(values, dtype=np_dt)
+Found pretrained emulator in the igm package: pinnbp_10_4_cnn_16_32_2_1
+IGM %s :         Iterations   |         Time (y)     |     Time Step (y)   |   Ice Volume (km^3) 
+IGM 15:22:48 :           0    |          1900        |        0.47        |          13.75 
+IGM 15:22:54 :          31    |          1910        |        0.23        |          13.88 
+IGM 15:23:01 :          76    |          1920        |        0.19        |          14.01 
+IGM 15:23:11 :         134    |          1930        |        0.19        |          14.18 
+IGM 15:23:21 :         187    |          1940        |        0.20        |          14.40 
+IGM 15:23:32 :         241    |          1950        |        0.19        |          14.74 
+IGM 15:23:42 :         297    |          1960        |        0.18        |          15.10 
+IGM 15:23:54 :         355    |          1970        |        0.18        |          15.42 
+IGM 15:24:06 :         411    |          1980        |        0.18        |          15.67 
+IGM 15:24:17 :         466    |          1990        |        0.18        |          15.86 
+IGM 15:24:28 :         520    |          2000        |        0.19        |          15.97 
+Memory statistics report:
+                            U  |  size :   0.0016 Gb  
+                            V  |  size :   0.0016 Gb  
+                            W  |  size :   0.0016 Gb  
+                        usurf  |  size :   0.0002 Gb  
+                          thk  |  size :   0.0002 Gb  
+                      icemask  |  size :   0.0002 Gb  
+                            X  |  size :   0.0002 Gb  
+                            Y  |  size :   0.0002 Gb  
+                           dX  |  size :   0.0002 Gb  
+                         topg  |  size :   0.0002 Gb  
+                    arrhenius  |  size :   0.0002 Gb  
+                    slidingco  |  size :   0.0002 Gb  
+                     uvelbase  |  size :   0.0002 Gb  
+                     vvelbase  |  size :   0.0002 Gb  
+                         ubar  |  size :   0.0002 Gb  
+                         vbar  |  size :   0.0002 Gb  
+                     uvelsurf  |  size :   0.0002 Gb  
+                     vvelsurf  |  size :   0.0002 Gb  
+                        lsurf  |  size :   0.0002 Gb  
+                          smb  |  size :   0.0002 Gb  
+                      divflux  |  size :   0.0002 Gb  
+                     wvelbase  |  size :   0.0002 Gb  
+                     wvelsurf  |  size :   0.0002 Gb  
+             weight_particles  |  size :   0.0002 Gb  
+                   velbar_mag  |  size :   0.0002 Gb  
+                  velsurf_mag  |  size :   0.0002 Gb  
+                         xpos  |  size :   0.0000 Gb  
+                         ypos  |  size :   0.0000 Gb  
+                         zpos  |  size :   0.0000 Gb  
+                        rhpos  |  size :   0.0000 Gb  
+                         wpos  |  size :   0.0000 Gb  
+                         tpos  |  size :   0.0000 Gb  
+                        englt  |  size :   0.0000 Gb  
+                        nxpos  |  size :   0.0000 Gb  
+                        nypos  |  size :   0.0000 Gb  
+                        nzpos  |  size :   0.0000 Gb  
+                       nrhpos  |  size :   0.0000 Gb  
+                        nwpos  |  size :   0.0000 Gb  
+                        ntpos  |  size :   0.0000 Gb  
+                       nenglt  |  size :   0.0000 Gb  
+                            y  |  size :   0.0000 Gb  
+Computational statistics report:
+                   smb_simple  |  mean time per it :   0.0036  |  total :   0.3283  |  number it  :       90
+                      iceflow  |  mean time per it :   0.1476  |  total :  76.8778  |  number it  :      521
+                         time  |  mean time per it :   0.0007  |  total :   0.3611  |  number it  :      521
+                          thk  |  mean time per it :   0.0050  |  total :   2.5891  |  number it  :      521
+                    vert_flow  |  mean time per it :   0.0328  |  total :  17.0796  |  number it  :      521
+                    particles  |  mean time per it :   0.0059  |  total :   3.0865  |  number it  :      521
+                   write_ncdf  |  mean time per it :   0.0114  |  total :   0.1258  |  number it  :       11
+                       plot2d  |  mean time per it :   0.3274  |  total :   3.6014  |  number it  :       11

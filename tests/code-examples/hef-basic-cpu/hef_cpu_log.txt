@@ -1,0 +1,63 @@
+2024-03-26 09:19:36: oggm.cfg: Reading default parameters from the OGGM `params.cfg` configuration file.
+2024-03-26 09:19:36: oggm.cfg: Multiprocessing switched OFF according to the parameter file.
+2024-03-26 09:19:36: oggm.cfg: Multiprocessing: using all available processors (N=8)
+2024-03-26 09:19:37: oggm.workflow: init_glacier_directories from prepro level 3 on 1 glaciers.
+2024-03-26 09:19:37: oggm.workflow: Execute entity tasks [gdir_from_prepro] on 1 glaciers
+/Users/afisc/igm_venv/lib/python3.10/site-packages/tensorflow/python/framework/tensor_util.py:518: RuntimeWarning: overflow encountered in cast
+  nparray = np.array(values, dtype=np_dt)
+Found pretrained emulator in the igm package: pinnbp_10_4_cnn_16_32_2_1
+IGM %s :         Iterations   |         Time (y)     |     Time Step (y)   |   Ice Volume (km^3) 
+IGM 09:19:40 :           0    |          1900        |        1.00        |           0.58 
+IGM 09:19:41 :          10    |          1910        |        1.00        |           0.63 
+IGM 09:19:42 :          20    |          1920        |        1.00        |           0.69 
+IGM 09:19:44 :          32    |          1930        |        0.69        |           0.74 
+IGM 09:19:45 :          47    |          1940        |        0.69        |           0.78 
+IGM 09:19:47 :          61    |          1950        |        0.79        |           0.81 
+IGM 09:19:48 :          74    |          1960        |        0.78        |           0.84 
+IGM 09:19:50 :          88    |          1970        |        0.74        |           0.88 
+IGM 09:19:51 :         103    |          1980        |        0.68        |           0.91 
+IGM 09:19:53 :         118    |          1990        |        0.71        |           0.93 
+IGM 09:19:55 :         132    |          2000        |        0.80        |           0.95 
+Memory statistics report:
+                            U  |  size :   0.0006 Gb  
+                            V  |  size :   0.0006 Gb  
+                            W  |  size :   0.0006 Gb  
+                        usurf  |  size :   0.0001 Gb  
+                          thk  |  size :   0.0001 Gb  
+                      icemask  |  size :   0.0001 Gb  
+                     usurfobs  |  size :   0.0001 Gb  
+                       thkobs  |  size :   0.0001 Gb  
+                   icemaskobs  |  size :   0.0001 Gb  
+                  uvelsurfobs  |  size :   0.0001 Gb  
+                  vvelsurfobs  |  size :   0.0001 Gb  
+                      thkinit  |  size :   0.0001 Gb  
+                         dhdt  |  size :   0.0001 Gb  
+                            X  |  size :   0.0001 Gb  
+                            Y  |  size :   0.0001 Gb  
+                           dX  |  size :   0.0001 Gb  
+                         topg  |  size :   0.0001 Gb  
+                    arrhenius  |  size :   0.0001 Gb  
+                    slidingco  |  size :   0.0001 Gb  
+                     uvelbase  |  size :   0.0001 Gb  
+                     vvelbase  |  size :   0.0001 Gb  
+                         ubar  |  size :   0.0001 Gb  
+                         vbar  |  size :   0.0001 Gb  
+                     uvelsurf  |  size :   0.0001 Gb  
+                     vvelsurf  |  size :   0.0001 Gb  
+                        lsurf  |  size :   0.0001 Gb  
+                          smb  |  size :   0.0001 Gb  
+                      divflux  |  size :   0.0001 Gb  
+                     wvelbase  |  size :   0.0001 Gb  
+                     wvelsurf  |  size :   0.0001 Gb  
+             weight_particles  |  size :   0.0001 Gb  
+                   velbar_mag  |  size :   0.0001 Gb  
+                  velsurf_mag  |  size :   0.0001 Gb  
+Computational statistics report:
+                   smb_simple  |  mean time per it :   0.0043  |  total :   0.3211  |  number it  :       75
+                      iceflow  |  mean time per it :   0.0690  |  total :   9.1764  |  number it  :      133
+                         time  |  mean time per it :   0.0005  |  total :   0.0684  |  number it  :      133
+                          thk  |  mean time per it :   0.0043  |  total :   0.5756  |  number it  :      133
+                    vert_flow  |  mean time per it :   0.0207  |  total :   2.7495  |  number it  :      133
+                    particles  |  mean time per it :   0.0067  |  total :   0.8970  |  number it  :      133
+                   write_ncdf  |  mean time per it :   0.0079  |  total :   0.0869  |  number it  :       11
+                       plot2d  |  mean time per it :   0.3234  |  total :   3.5576  |  number it  :       11

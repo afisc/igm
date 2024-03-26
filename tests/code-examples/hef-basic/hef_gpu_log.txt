@@ -1,0 +1,69 @@
+2024-03-26 09:22:38.281760: I metal_plugin/src/device/metal_device.cc:1154] Metal device set to: Apple M1 Pro
+2024-03-26 09:22:38.281790: I metal_plugin/src/device/metal_device.cc:296] systemMemory: 16.00 GB
+2024-03-26 09:22:38.281797: I metal_plugin/src/device/metal_device.cc:313] maxCacheSize: 5.33 GB
+2024-03-26 09:22:38.282019: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:306] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
+2024-03-26 09:22:38.282336: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:272] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -> physical PluggableDevice (device: 0, name: METAL, pci bus id: <undefined>)
+2024-03-26 09:22:39: oggm.cfg: Reading default parameters from the OGGM `params.cfg` configuration file.
+2024-03-26 09:22:39: oggm.cfg: Multiprocessing switched OFF according to the parameter file.
+2024-03-26 09:22:39: oggm.cfg: Multiprocessing: using all available processors (N=8)
+2024-03-26 09:22:39: oggm.workflow: init_glacier_directories from prepro level 3 on 1 glaciers.
+2024-03-26 09:22:39: oggm.workflow: Execute entity tasks [gdir_from_prepro] on 1 glaciers
+2024-03-26 09:22:40.584050: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:117] Plugin optimizer for device_type GPU is enabled.
+/Users/afisc/igm_venv/lib/python3.10/site-packages/tensorflow/python/framework/tensor_util.py:518: RuntimeWarning: overflow encountered in cast
+  nparray = np.array(values, dtype=np_dt)
+Found pretrained emulator in the igm package: pinnbp_10_4_cnn_16_32_2_1
+IGM %s :         Iterations   |         Time (y)     |     Time Step (y)   |   Ice Volume (km^3) 
+IGM 09:22:47 :           0    |          1900        |        1.00        |           0.58 
+IGM 09:22:50 :          10    |          1910        |        1.00        |           0.63 
+IGM 09:22:52 :          20    |          1920        |        1.00        |           0.69 
+IGM 09:22:54 :          32    |          1930        |        0.69        |           0.74 
+IGM 09:22:56 :          47    |          1940        |        0.69        |           0.78 
+IGM 09:22:59 :          61    |          1950        |        0.79        |           0.81 
+IGM 09:23:01 :          74    |          1960        |        0.78        |           0.84 
+IGM 09:23:03 :          88    |          1970        |        0.74        |           0.88 
+IGM 09:23:06 :         103    |          1980        |        0.68        |           0.91 
+IGM 09:23:09 :         118    |          1990        |        0.71        |           0.93 
+IGM 09:23:12 :         132    |          2000        |        0.80        |           0.95 
+Memory statistics report:
+                            U  |  size :   0.0006 Gb  
+                            V  |  size :   0.0006 Gb  
+                            W  |  size :   0.0006 Gb  
+                        usurf  |  size :   0.0001 Gb  
+                          thk  |  size :   0.0001 Gb  
+                      icemask  |  size :   0.0001 Gb  
+                     usurfobs  |  size :   0.0001 Gb  
+                       thkobs  |  size :   0.0001 Gb  
+                   icemaskobs  |  size :   0.0001 Gb  
+                  uvelsurfobs  |  size :   0.0001 Gb  
+                  vvelsurfobs  |  size :   0.0001 Gb  
+                      thkinit  |  size :   0.0001 Gb  
+                         dhdt  |  size :   0.0001 Gb  
+                            X  |  size :   0.0001 Gb  
+                            Y  |  size :   0.0001 Gb  
+                           dX  |  size :   0.0001 Gb  
+                         topg  |  size :   0.0001 Gb  
+                    arrhenius  |  size :   0.0001 Gb  
+                    slidingco  |  size :   0.0001 Gb  
+                     uvelbase  |  size :   0.0001 Gb  
+                     vvelbase  |  size :   0.0001 Gb  
+                         ubar  |  size :   0.0001 Gb  
+                         vbar  |  size :   0.0001 Gb  
+                     uvelsurf  |  size :   0.0001 Gb  
+                     vvelsurf  |  size :   0.0001 Gb  
+                        lsurf  |  size :   0.0001 Gb  
+                          smb  |  size :   0.0001 Gb  
+                      divflux  |  size :   0.0001 Gb  
+                     wvelbase  |  size :   0.0001 Gb  
+                     wvelsurf  |  size :   0.0001 Gb  
+             weight_particles  |  size :   0.0001 Gb  
+                   velbar_mag  |  size :   0.0001 Gb  
+                  velsurf_mag  |  size :   0.0001 Gb  
+Computational statistics report:
+                   smb_simple  |  mean time per it :   0.0126  |  total :   0.9479  |  number it  :       75
+                      iceflow  |  mean time per it :   0.0535  |  total :   7.1114  |  number it  :      133
+                         time  |  mean time per it :   0.0039  |  total :   0.5249  |  number it  :      133
+                          thk  |  mean time per it :   0.0188  |  total :   2.4938  |  number it  :      133
+                    vert_flow  |  mean time per it :   0.0923  |  total :  12.2776  |  number it  :      133
+                    particles  |  mean time per it :   0.0352  |  total :   4.6801  |  number it  :      133
+                   write_ncdf  |  mean time per it :   0.0219  |  total :   0.2409  |  number it  :       11
+                       plot2d  |  mean time per it :   0.3129  |  total :   3.4416  |  number it  :       11
