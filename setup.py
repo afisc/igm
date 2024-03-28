@@ -19,7 +19,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="igm-model",
-    version="2.2.1",
+    version="2.1.1",
     author="Guillaume Jouvet",
     author_email="guillaume.jouvet@unil.ch",
     url="https://github.com/jouvetg/igm",
@@ -32,8 +32,7 @@ setup(
     long_description_content_type="text/markdown",
     python_requires="<3.11",
     install_requires=[
-        "tensorflow-macos==2.14.0",
-        "tensorflow-metal",
+        "tensorflow[and-cuda]==2.14",
         "matplotlib",
         "scipy",
         "netCDF4",

@@ -7,14 +7,17 @@ fig/
 biblio.bib
 pix2pixhd-texture-model/
 texture-aif-test
+tests/examples/texture-test/
 checkpoints/
 logdir/
 # texture/
 smb_accpdd/
 clim_glacialindex/
+igm_performance/
 
 # hide output files and data
 input_saved.nc
+RGI60-11.01450/
 output.nc
 optimize.nc
 computational-statistics.txt
@@ -28,5 +31,5 @@ params_saved.json
 smb_accpdd/
 clim_glacialindex/
 input_saved.nc
-RGI*/
+RGI60-*/
 .vscode/

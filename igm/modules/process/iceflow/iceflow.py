@@ -668,10 +668,12 @@ def _iceflow_energy(
 
     # Vertical discretization
     if Nz > 1:
-        zeta = np.arange(Nz) / (Nz - 1)
+        zeta = np.arange(Nz) / (Nz - 1)  # formerly ...
+        #zeta = tf.range(Nz, dtype=tf.float32) / (Nz - 1)
         temp = (zeta / vert_spacing) * (1.0 + (vert_spacing - 1.0) * zeta)
         temd = temp[1:] - temp[:-1]
-        dz = tf.stack([_stag4(thk) * z for z in temd], axis=1)
+        dz = tf.stack([_stag4(thk) * z for z in temd], axis=1)  # formerly ..
+        #dz = (tf.expand_dims(tf.expand_dims(temd,axis=-1),axis=-1)*tf.expand_dims(_stag4(thk),axis=0))
     else:
         dz = tf.expand_dims(_stag4(thk), axis=0)
 
@@ -702,17 +704,20 @@ def _iceflow_energy(
     )
     
     sr = srx + srz
-    
-    sr = tf.clip_by_value(sr, min_sr**2, max_sr**2)
 
     sr = tf.where(COND, sr, 0.0)
+    
+    srcapped = tf.clip_by_value(sr, min_sr**2, max_sr**2)
+
+    srcapped = tf.where(COND, srcapped, 0.0)
+ 
 
     # C_shear is unit  Mpa y^(1/n) y^(-1-1/n) * m^3 = Mpa y^(-1) m^3
     if len(B.shape) == 3:
         C_shear = (
             tf.reduce_mean(
                 _stag4(B)
-                * tf.reduce_sum(dz * ((sr + regu_glen**2) ** (p / 2)), axis=1),
+                * tf.reduce_sum(dz * ((srcapped + regu_glen**2) ** ((p-2) / 2)) * sr, axis=1),
                 axis=(-1, -2),
             )
             / p
@@ -721,7 +726,7 @@ def _iceflow_energy(
         C_shear = (
             tf.reduce_mean(
                 tf.reduce_sum(
-                    _stag8(B) * dz * ((sr + regu_glen**2) ** (p / 2)), axis=1
+                    _stag8(B) * dz * ((srcapped + regu_glen**2) ** ((p-2) / 2)) * sr, axis=1
                 ),
                 axis=(-1, -2),
             )
